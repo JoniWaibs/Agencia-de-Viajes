@@ -1,0 +1,22 @@
+extends ./layout/main
+block contenido
+    main.container.mt-5
+        h1.text-center.mt-5=pagina
+        include ./layout/testimonios
+        .row    
+            h2.display-block.w-100.text-center Agrega un testimonial
+        .col-12.text-center.text-danger 
+            p #{alerta}   
+        .row.justify-content-center
+            .col-md-8
+                form(action="/testimoniales" method="POST" id="formulario")
+                    .form-group
+                        label(for="nombre")  Dejanos tu nombre
+                        input(type="text" id="nombre" name="nombre" class="form-control" value=nombre)    
+                    .form-group
+                        label(for="correo")  Dejanos tu correo
+                        input(type="mail" id="correo" name="correo" class="form-control" value=correo)
+                    .form-group
+                        label(for="mensaje")  Dejanos tu mensaje
+                        textarea(id="mensaje" name="mensaje" class="form-control" rows=3)=mensaje
+                    input(type="submit" id="enviar" class="btn btn-block btn-success" value="Enviar")
