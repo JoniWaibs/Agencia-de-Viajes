@@ -1,4 +1,10 @@
 # Agencia-de-Viajes
-Este es un proyecto para portfolio personal en el que se uso Node JS como lenguaje , con bases de datos mySql , Sequelize como ORM, pug para renderizar las vistas y Bootstrap.
+
+Proyecto para agencia de viajes de mi ciudad (Santa Fe - Argentina)
+
+Utilicé  Node JS como lenguaje de programacion, con bases de datos mySql , Sequelize como ORM, PUG para renderizar las vistas y Bootstrap para los estilos CSS
 El proyecto esta construido bajo el patron de arquitectura MVC y el tiene su deploy en HEROKU.
-https://agencia-app.herokuapp.com/
+
+URL del prototipo: https://agencia-app.herokuapp.com/
+
+Capturas relevantes.
